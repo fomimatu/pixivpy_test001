@@ -1,22 +1,20 @@
 # coding: utf-8
 
+
 """
 作家情報
 """
 class artistData:
     def __init__(self):  # デフォルト値
-        self.pixivID # フォルダ名は、pixivID + "." + name
-        self.name    # 漢字名
-        self.acount # ローマ字名
-        self.scoreAVG       # TOP10の平均
-        self.favoritedAVG
-        self.images  # list[imageData]
-
-        self.score   #stats.score
-        self.favorited_count #stats.favorited_count.public + tats.favorited_count.private
+        self.pixivID = None  #
+        self.name = None    # 漢字名
+        self.acount = None  # ローマ字名
+        self.avg_views_count = None       # TOP10の平均
+        self.avg_favorited_count = None
+        self.images = None  # list[imageData]
+        self.score = None   #stats.score
+        self.favorited_count = None  # stats.favorited_count.public + tats.favorited_count.private
         self.accessTime = None
-
-
 
 
 """
@@ -24,12 +22,11 @@ class artistData:
 """
 class imageData:
     def __init__(self):  # デフォルト値
-        self.imageID #
-        self.title
-        self.tags #
-        self.score
-        self.view_count
-        self.favorited_count
-        self.created_time
-
-        self.accessTime = None  # 更新時間、ここがNoneなら末巡回とする
+        self.imageID = None
+        self.pixivID = None
+        self.title = None
+        self.tags = None
+        self.score = None
+        self.view_count = None
+        self.favorited_count = None
+        self.created_time = None
